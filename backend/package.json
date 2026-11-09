@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --env-file=../.env --watch index.ts",
+    "start": "bun index.ts",
+    "test": "bun test",
+    "lint": "oxlint --deny-warnings",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/google-vertex": "4.0.227",
+    "ai": "6.0.324",
+    "hono": "4.13.16"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.4",
+    "oxlint": "1.89.0",
+    "typescript": "5.9.3"
+  }
+}
